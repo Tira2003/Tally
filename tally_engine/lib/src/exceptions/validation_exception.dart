@@ -35,6 +35,26 @@ enum ValidationErrorCode {
 
   /// The sum of item prices does not equal the expense total.
   itemsDoNotSumToTotal,
+
+  // ── Equal-split / rounding error codes ──────────────────────────────────
+
+  /// The participant list passed to a split function is empty.
+  participantsEmpty,
+
+  /// A participant userId is blank (empty or only whitespace).
+  blankParticipantUserId,
+
+  /// A userId appears more than once in the participants list.
+  duplicateParticipantUserId,
+
+  /// The total passed to a split function is not positive.
+  totalNotPositiveForSplit,
+
+  /// A weight passed to [allocateLargestRemainder] is not positive.
+  invalidWeight,
+
+  /// The weights list passed to [allocateLargestRemainder] is empty.
+  weightsEmpty,
 }
 
 /// Thrown when an [Expense] fails validation.
