@@ -1,0 +1,13 @@
+name: tally_engine
+description: >
+  Pure-Dart business logic for the Tally trip expense-splitting app.
+  Step 1: immutable data models and two-ledger validation.
+publish_to: none
+version: 0.1.0
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dev_dependencies:
+  test: ^1.25.0
+  lints: ^4.0.0
